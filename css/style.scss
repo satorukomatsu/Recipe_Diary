@@ -1,15 +1,18 @@
 $black: #000;
 $white: #fff;
 
+// フォントの指定
 html {
   font-family: "Open Sans", sans-serif;
 }
 
+// リセット
 body {
   margin: 0;
   font-size: 100%;
 }
 
+// 画像の初期設定
 img {
   width: 1000px;
   height: auto;
@@ -18,10 +21,13 @@ img {
 a {
   color: $black;
 }
+
+// テキストの中央寄せ
 .wrapper {
   text-align: center;
 }
 
+// ファーストビューの画像表示
 #mainvisual {
   position: relative;
   width: 100vw;
@@ -44,6 +50,7 @@ a {
   }
 }
 
+// レシピ画像の表示（横並び３分割）
 #photos {
   display: flex;
   width: 100%;
@@ -54,6 +61,7 @@ a {
   }
 }
 
+// ボタンのスタイルとSNSリンク
 #detail {
   margin: 70px auto 0;
   .button {
@@ -90,6 +98,7 @@ a {
   margin: 20px;
 }
 
+// レスポンシブデザイン設定（レシピ画像を縦並び、余白なし）
 @media screen and (max-width: 835px) {
   #photos {
     display: block;
