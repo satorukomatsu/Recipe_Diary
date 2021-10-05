@@ -1,0 +1,58 @@
+$black: #000;
+
+html {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bolder;
+}
+
+body {
+  margin: 0;
+  background-image: url(/images/mainvisual.jpg);
+  background-color: rgba(255, 255, 255, 0.801);
+  background-blend-mode: lighten;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.mainvisual {
+  width: 100vw;
+  height: 100vh;
+  margin-bottom: 80px;
+  img {
+    width: 50%;
+    height: 50%;
+    display: block;
+    float: left;
+    object-fit: cover;
+  }
+}
+
+.head-line {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.menu {
+  .menu-dtl {
+    display: flex;
+    margin: 50px;
+    a {
+      text-decoration: none;
+      color: $black;
+      &:hover {
+        opacity: 0.5;
+        transition: 0.5s;
+      }
+    }
+    img {
+      width: 150px;
+      height: auto;
+      object-fit: cover;
+    }
+    .explain {
+      margin-left: 30px;
+    }
+  }
+}
